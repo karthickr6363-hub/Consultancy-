@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Consulting Business Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>ConsultPro</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Insights & Resources</h1>
+            <p class="page-subtitle">Expert perspectives on business consulting and leadership</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-filter">
+                <button class="filter-btn active" data-filter="all">All Posts</button>
+                <button class="filter-btn" data-filter="strategy">Strategy</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+                <button class="filter-btn" data-filter="leadership">Leadership</button>
+                <button class="filter-btn" data-filter="finance">Finance</button>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-category="digital">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600" alt="Digital Transformation">
+                        <div class="blog-category">Digital</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>The Future of Digital Transformation in 2024</h3>
+                        <p>Discover the key trends shaping digital transformation strategies and how businesses can stay ahead in an increasingly digital world.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=12" alt="Author">
+                                <span>David Thompson</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-category="strategy">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600" alt="Business Strategy">
+                        <div class="blog-category">Strategy</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 12, 2024</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Strategic Planning for Uncertain Times</h3>
+                        <p>Learn how to develop resilient business strategies that can adapt to rapidly changing market conditions and emerging challenges.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=5" alt="Author">
+                                <span>Emily Rodriguez</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600" alt="Leadership">
+                        <div class="blog-category">Leadership</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Building High-Performance Teams</h3>
+                        <p>Explore proven methodologies for creating and nurturing high-performance teams that drive organizational success.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=14" alt="Author">
+                                <span>Robert Martinez</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-category="finance">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Finance">
+                        <div class="blog-category">Finance</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 8, 2024</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>Financial Optimization Strategies for Growth</h3>
+                        <p>Master the art of financial optimization with insights on cost management, capital allocation, and ROI maximization.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=33" alt="Author">
+                                <span>Marcus Johnson</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card" data-category="digital">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600" alt="AI Technology">
+                        <div class="blog-category">Digital</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3>AI and Automation: Practical Applications</h3>
+                        <p>Discover how artificial intelligence and automation can be practically implemented to drive efficiency and innovation.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=9" alt="Author">
+                                <span>Lisa Chen</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-category="strategy">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Market Analysis">
+                        <div class="blog-category">Strategy</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 3, 2024</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Market Entry Strategies for New Markets</h3>
+                        <p>A comprehensive guide to successfully entering new markets with proven strategies and risk mitigation tactics.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=10" alt="Author">
+                                <span>Jennifer Williams</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600" alt="Change Management">
+                        <div class="blog-category">Leadership</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> February 28, 2024</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Leading Through Change: A Practical Guide</h3>
+                        <p>Navigate organizational change successfully with proven leadership strategies and change management frameworks.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=12" alt="Author">
+                                <span>David Thompson</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card" data-category="finance">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600" alt="Risk Management">
+                        <div class="blog-category">Finance</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> February 25, 2024</span>
+                            <span><i class="fas fa-clock"></i> 9 min read</span>
+                        </div>
+                        <h3>Risk Management in Modern Business</h3>
+                        <p>Essential risk management strategies to protect your business while enabling growth and innovation.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=33" alt="Author">
+                                <span>Marcus Johnson</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card" data-category="digital">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Cloud Computing">
+                        <div class="blog-category">Digital</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> February 22, 2024</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Cloud Migration: Best Practices</h3>
+                        <p>Learn the essential steps and best practices for a successful cloud migration journey without disrupting operations.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="https://i.pravatar.cc/50?img=9" alt="Author">
+                                <span>Lisa Chen</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest insights and updates delivered to your inbox</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>ConsultPro</span>
+                    </div>
+                    <p>Empowering businesses with strategic consulting solutions since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Business Strategy</a></li>
+                        <li><a href="services.html">Financial Advisory</a></li>
+                        <li><a href="services.html">IT Transformation</a></li>
+                        <li><a href="services.html">HR Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Avenue, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@consultpro.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ConsultPro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

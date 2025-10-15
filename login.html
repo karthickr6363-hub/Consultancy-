@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Consulting Business Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>ConsultPro</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn-login active">Login</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-wrapper">
+                <!-- Login Form -->
+                <div class="auth-form-container active" id="loginForm">
+                    <div class="auth-header">
+                        <div class="auth-logo">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h2>Welcome Back</h2>
+                        <p>Sign in to access your account</p>
+                    </div>
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                                <span class="toggle-password"><i class="fas fa-eye"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Remember me
+                            </label>
+                            <a href="#" class="forgot-link">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Sign In
+                        </button>
+                    </form>
+                    <div class="auth-divider">
+                        <span>OR</span>
+                    </div>
+                    <div class="social-auth">
+                        <button class="social-btn google-btn">
+                            <i class="fab fa-google"></i>
+                            Sign in with Google
+                        </button>
+                        <button class="social-btn linkedin-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                            Sign in with LinkedIn
+                        </button>
+                    </div>
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="#" class="switch-form" data-form="register">Sign Up</a></p>
+                    </div>
+                </div>
+
+                <!-- Register Form -->
+                <div class="auth-form-container" id="registerForm">
+                    <div class="auth-header">
+                        <div class="auth-logo">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h2>Create Account</h2>
+                        <p>Join us and transform your business</p>
+                    </div>
+                    <form class="auth-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regFirstName">First Name</label>
+                                <input type="text" id="regFirstName" placeholder="First name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regLastName">Last Name</label>
+                                <input type="text" id="regLastName" placeholder="Last name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="regEmail">Email Address</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="regEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="regCompany">Company Name</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-building"></i>
+                                <input type="text" id="regCompany" placeholder="Your company" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="regPassword">Password</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="regPassword" placeholder="Create password" required>
+                                <span class="toggle-password"><i class="fas fa-eye"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="regConfirmPassword">Confirm Password</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="regConfirmPassword" placeholder="Confirm password" required>
+                            </div>
+                        </div>
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#">Terms & Conditions</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Create Account
+                        </button>
+                    </form>
+                    <div class="auth-divider">
+                        <span>OR</span>
+                    </div>
+                    <div class="social-auth">
+                        <button class="social-btn google-btn">
+                            <i class="fab fa-google"></i>
+                            Sign up with Google
+                        </button>
+                        <button class="social-btn linkedin-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                            Sign up with LinkedIn
+                        </button>
+                    </div>
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="#" class="switch-form" data-form="login">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

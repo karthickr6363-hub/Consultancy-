@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Consulting Business Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-logo">
+            <i class="fas fa-chart-line"></i>
+            <span>ConsultPro</span>
+        </div>
+        <nav class="admin-nav">
+            <a href="#dashboard" class="admin-nav-link active" data-section="dashboard">
+                <i class="fas fa-th-large"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#services" class="admin-nav-link" data-section="services">
+                <i class="fas fa-cogs"></i>
+                <span>Services</span>
+            </a>
+            <a href="#clients" class="admin-nav-link" data-section="clients">
+                <i class="fas fa-users"></i>
+                <span>Clients</span>
+            </a>
+            <a href="#blogs" class="admin-nav-link" data-section="blogs">
+                <i class="fas fa-blog"></i>
+                <span>Blog Posts</span>
+            </a>
+            <a href="#testimonials" class="admin-nav-link" data-section="testimonials">
+                <i class="fas fa-comments"></i>
+                <span>Testimonials</span>
+            </a>
+            <a href="#analytics" class="admin-nav-link" data-section="analytics">
+                <i class="fas fa-chart-bar"></i>
+                <span>Analytics</span>
+            </a>
+            <a href="#settings" class="admin-nav-link" data-section="settings">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+        <div class="admin-user">
+            <img src="https://i.pravatar.cc/50?img=12" alt="Admin">
+            <div class="admin-user-info">
+                <p class="admin-user-name">Admin User</p>
+                <p class="admin-user-role">Administrator</p>
+            </div>
+            <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <!-- Admin Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="admin-page-title">Dashboard</h1>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="admin-notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">5</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Section -->
+        <section class="admin-section active" id="dashboard">
+            <!-- Stats Cards -->
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <div class="stat-card-icon blue">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-card-content">
+                        <h3 class="counter" data-target="250">0</h3>
+                        <p>Total Clients</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 12%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-icon green">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-card-content">
+                        <h3 class="counter" data-target="500">0</h3>
+                        <p>Active Projects</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 8%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-icon orange">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-card-content">
+                        <h3>$2.5M</h3>
+                        <p>Revenue (YTD)</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 22%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-icon purple">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-card-content">
+                        <h3>4.9</h3>
+                        <p>Avg. Rating</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 0.3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="admin-charts">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Revenue Overview</h3>
+                        <select class="chart-filter">
+                            <option>Last 6 Months</option>
+                            <option>Last Year</option>
+                        </select>
+                    </div>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Projects by Industry</h3>
+                        <select class="chart-filter">
+                            <option>2024</option>
+                            <option>2023</option>
+                        </select>
+                    </div>
+                    <canvas id="industryChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="admin-card">
+                <div class="card-header">
+                    <h3>Recent Activity</h3>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon blue">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>New client registered:</strong> TechStart Inc.</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon green">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Project completed:</strong> Digital Transformation for MedCare</p>
+                            <span class="activity-time">5 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon orange">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>New testimonial received:</strong> 5-star rating from Global Finance</p>
+                            <span class="activity-time">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon purple">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>New blog published:</strong> "Digital Transformation in 2024"</p>
+                            <span class="activity-time">2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="admin-section" id="services">
+            <div class="admin-card">
+                <div class="card-header">
+                    <h3>Manage Services</h3>
+                    <button class="btn btn-primary btn-add" data-modal="serviceModal">
+                        <i class="fas fa-plus"></i> Add Service
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Service Name</th>
+                                <th>Category</th>
+                                <th>Projects</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Business Strategy Consulting</td>
+                                <td>Strategy</td>
+                                <td>145</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Financial Advisory</td>
+                                <td>Finance</td>
+                                <td>98</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IT & Digital Transformation</td>
+                                <td>Technology</td>
+                                <td>127</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HR Consulting</td>
+                                <td>Human Resources</td>
+                                <td>76</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Marketing & Branding</td>
+                                <td>Marketing</td>
+                                <td>54</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="admin-section" id="clients">
+            <div class="admin-card">
+                <div class="card-header">
+                    <h3>Client Management</h3>
+                    <button class="btn btn-primary btn-add">
+                        <i class="fas fa-plus"></i> Add Client
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Company Name</th>
+                                <th>Contact Person</th>
+                                <th>Email</th>
+                                <th>Projects</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TechCorp Solutions</td>
+                                <td>John Anderson</td>
+                                <td>john@techcorp.com</td>
+                                <td>3</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <button class="btn-icon btn-view"><i class="fas fa-eye"></i></button>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Global Finance Inc</td>
+                                <td>Sarah Mitchell</td>
+                                <td>sarah@globalfinance.com</td>
+                                <td>2</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <button class="btn-icon btn-view"><i class="fas fa-eye"></i></button>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Innovation Labs</td>
+                                <td>Michael Chen</td>
+                                <td>michael@innovationlabs.com</td>
+                                <td>4</td>
+                                <td><span class="badge badge-warning">Pending</span></td>
+                                <td>
+                                    <button class="btn-icon btn-view"><i class="fas fa-eye"></i></button>
+                                    <button class="btn-icon btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Section -->
+        <section class="admin-section" id="blogs">
+            <div class="admin-card">
+                <div class="card-header">
+                    <h3>Blog Posts</h3>
+                    <button class="btn btn-primary btn-add">
+                        <i class="fas fa-plus"></i> New Post
+                    </button>
+                </div>
+                <div class="blog-grid-admin">
+                    <div class="blog-admin-card">
+                        <h4>The Future of Digital Transformation</h4>
+                        <p class="blog-meta">By David Thompson • March 15, 2024</p>
+                        <div class="blog-stats">
+                            <span><i class="fas fa-eye"></i> 1,234 views</span>
+                            <span><i class="fas fa-heart"></i> 89 likes</span>
+                        </div>
+                        <div class="blog-actions">
+                            <button class="btn btn-sm btn-secondary">Edit</button>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </div>
+                    </div>
+                    <div class="blog-admin-card">
+                        <h4>Strategic Planning for Uncertain Times</h4>
+                        <p class="blog-meta">By Emily Rodriguez • March 12, 2024</p>
+                        <div class="blog-stats">
+                            <span><i class="fas fa-eye"></i> 987 views</span>
+                            <span><i class="fas fa-heart"></i> 67 likes</span>
+                        </div>
+                        <div class="blog-actions">
+                            <button class="btn btn-sm btn-secondary">Edit</button>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
